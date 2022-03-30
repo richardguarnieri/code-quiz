@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz Challenge</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav>
+        <p id="view-highscores">View Highscores</p>
+        <p id="time-tracker">Time: 0</p>
+    </nav>
+    <main>
+
+        <div id="start-quiz">
+            <h1 id="start-title">Coding Quiz Challenge</h1>
+            <p id="start-msg">Try to answer the following code-related questions within the time limit. 
+                Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+            <button id="start-btn" class="btn" type="button">Start Quiz</button>
+        </div>
+
+        <div id="progress-quiz" class="hidden">
+            <h1 id="progress-title"></h1>
+            <ul>
+                <li id="progress-option1" class="btn"></li>
+                <li id="progress-option2" class="btn"></li>
+                <li id="progress-option3" class="btn"></li>
+                <li id="progress-option4" class="btn"></li>
+            </ul>
+            <hr id="progress-hr" class="hidden">
+            <p id="progress-msg" class="hidden"></p>
+        </div>
+
+        <div id="end-quiz" class="hidden">
+            <h1 id="end-title">All done!</h1>
+            <p id="end-score"></p>
+            <form id='end-form' action="">
+                <label for="end-form-name">Enter initials: </label>
+                <input id="end-form-name" type="text">
+                <input class="btn" type="submit">
+            </form>
+        </div>
+
+        <div id="highscores-quiz" class="hidden">
+            <h1 id="highscores-title">Highscores</h1>
+            <div id="highscores-container"></div>
+            <button id="go-back-btn" class="btn" type="button">Go Back</button>
+            <button id="clear-scores-btn" class="btn" type="button">Clear Highscores</button>
+        </div>
+
+    </main>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
