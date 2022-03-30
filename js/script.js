@@ -184,6 +184,7 @@ const viewHighscoresFunc = () => {
 
 // startQuiz function
 const startQuiz = () => {
+    timeTracker.innerHTML = 'Time Left: ' + secondsLeft
     quizInterval = setInterval(() => {
         secondsLeft--;
         timeTracker.innerHTML = 'Time Left: ' + secondsLeft;
