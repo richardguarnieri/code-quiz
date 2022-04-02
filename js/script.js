@@ -177,7 +177,7 @@ const viewHighscoresFunc = () => {
         let pElement = document.createElement('p');
         let name = e.name;
         let score = e.score;
-        pElement.innerHTML = i + " " + name + ' - ' + score;
+        pElement.innerHTML = 'Rank ' + (parseInt(i) + 1) + ": " + name + ' - ' + score;
         highscoresContainer.append(pElement);
     });
 };
